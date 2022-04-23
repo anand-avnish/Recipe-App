@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="column-xl-12 text-center">
+        <h1
+            style="color:crimson"
+        >WELCOME</h1>
+        <h2>to</h2>
+        <h1><i>Recipe App</i></h1>
+        <br>
+        <br>
+        <br><br><br>
+        <ng-template [ngIf]="!(authState | async).authenticated">
+            <h3>Please <a routerLink="/signup">Register</a>/<a routerLink="/signin">Login</a> to continue.</h3>
+        </ng-template>
+    </div>
+</div>
